@@ -1,8 +1,9 @@
 const collect_ratings = () =>{
-    var ratings = new Object();
-    ratings.count = 0;
-    ratings.sum = 0;
-    ratings.average = 0;
+    const ratings = {
+        count:0,
+        sum:0,
+        average:0
+    }
     let rating = 0;
     var elements = document.querySelectorAll('rating');
     elements.forEach((element)=>{
