@@ -5,7 +5,7 @@ const collect_ratings = () =>{
         average:0
     }
     let rating = 0;
-    var elements = document.querySelectorAll('rating');
+    var elements = document.querySelectorAll('.rating');
     elements.forEach((element)=>{
        rating = parseInt(element.id.replace('star','')); 
        ratings.count += parseInt(element.value)
@@ -20,4 +20,4 @@ const collect_ratings = () =>{
 
 }
 
-const ratings = document.addEventListener('change',collect_ratings(), document.querySelector('average').value = ratings.average);
+const ratings = document.addEventListener('change',collect_ratings(), document.querySelector('.average').value = ratings.average);
