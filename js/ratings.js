@@ -14,10 +14,11 @@ const collect_ratings = () =>{
 
        if(ratings.count != 0){
         ratings.average = ratings.sum/ratings.count;
-        ratings.average.toFixed(2);
+        // ratings.average.toFixed(2);
        }
     })
+    return ratings;
 
 }
 
-const ratings = document.addEventListener('change',collect_ratings(), document.querySelector('.average').value = ratings.average);
+const ratings = document.addEventListener('change',collect_ratings(), document.querySelector('#average').value = ratings.average.toFixed(2));
